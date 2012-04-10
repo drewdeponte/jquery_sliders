@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Sliders Plugin Example</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/jquery.sliders.css">
+    <script language="javascript" type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script language="javascript" type="text/javascript" src="../jquery.sliders.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#slideshow1").sliders();
+        $("#slideshow2").sliders({ interval: 1000 });
+      });
+    </script>
+
+    <style type="text/css">
+      .sliders {
+        height: 300px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>jQuery Sliders Plugin Example</h1>
+
+    <div id="slideshow1" class="sliders">
+      <div style="background-color: red; height: 300px; width: 300px;" class="active-slide slide">hello</div>
+      <div style="background-color: blue; height: 300px; width: 300px;" class="slide">world</div>
+      <div style="background-color: green; height: 300px; width: 300px;" class="slide">again</div>
+    </div>
+
+    <div id="slideshow2" class="sliders">
+      <div style="background-color: orange; height: 300px; width: 300px;" class="active-slide slide">hello</div>
+      <div style="background-color: yellow; height: 300px; width: 300px;" class="slide">world</div>
+      <div style="background-color: teal; height: 300px; width: 300px;" class="slide">again</div>
+    </div>
+
+  </body>
+</html>
